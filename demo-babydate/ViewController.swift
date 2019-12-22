@@ -65,13 +65,13 @@ class ViewController: UIViewController {
         
         print(babyDate)
         let babyDate1 = DateFormatter()
-               babyDate1.dateFormat = "MM dd yyyy" // 設定要顯示在Text Field的日期時間格式
+               babyDate1.dateFormat = "yyyy / MM / dd" // 設定要顯示在Text Field的日期時間格式
         
                birthday.text = babyDate1.string(from: babybirthday.date) // 更新lable的內容
        
         let now = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM dd yyyy"
+        formatter.dateFormat = "yyyy / MM / dd"
         let time = formatter.string(from: now)
         self.newdate.text = time
         
